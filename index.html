@@ -1,0 +1,417 @@
+<html lang="en">
+ <head>
+  <link rel="stylesheet" href="estilos.css">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title> SPORTSQUILLA
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   .carousel {
+     display: flex;
+     overflow: hidden;
+     position: relative;
+   }
+   .carousel-item {
+     min-width: 100%;
+     transition: transform 0.5s ease-in-out;
+   }
+   .carousel-button {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     background-color: rgba(0, 0, 0, 0.5);
+     color: rgb(255, 255, 255);
+     border: none;
+     padding: 10px;
+     cursor: pointer;
+   }
+   .carousel-button.prev {
+     left: 10px;
+   }
+   .carousel-button.next {
+     right: 10px;
+   }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <!-- Header -->
+  <header class="bg-white shadow">
+   <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+    <div class="flex items-center">
+     <img alt="Sportline logo" class="h-8" height="50" src="Diseño sin título.jpg" width="80"/>
+     <nav class="ml-10 space-x-4">
+      <a class="text-black hover:text-gray-700" href="#">
+       HOMBRE
+      </a>
+      <a class="text-black hover:text-gray-700" href="#">
+       MUJER
+      </a>
+      <a class="text-black hover:text-gray-700" href="#">
+       MARCAS
+      </a>
+      <a class="text-black hover:text-gray-700" href="#">
+       DEPORTES
+      </a>
+     </nav>
+    </div>
+    <div class="flex items-center space-x-4">
+     <a class="text-black hover:text-gray-700" href="#">
+      <i class="fas fa-user">
+      </i>
+      Mi perfil
+     </a>
+     <a class="text-black hover:text-gray-700" href="#">
+      <i class="fas fa-search">
+      </i>
+     </a>
+     <a class="text-black hover:text-gray-700" href="#">
+      <i class="fas fa-shopping-cart">
+      </i>
+      Carrito
+     </a>
+    </div>
+   </div>
+  </header>
+  <!-- Banner -->
+  <div class="bg-black text-white text-center py-2">
+   LO MEJOR PARA EL DEPORTE DISPONIBLE EN
+   <a class="text-blue-500" href="#">
+    SPORTSQUILLA.COM
+   </a>
+  </div>
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-6">
+   <!-- Brand Banner -->
+   <div class="bg-black text-white text-center py-16 mb-6">
+    <h1 class="text-4xl font-bold">
+     PUMA
+    </h1>
+   </div>
+   <!-- Carousel -->
+   <div class="carousel mb-6">
+    <button class="carousel-button prev" onclick="prevSlide()">
+     <i class="fas fa-chevron-left">
+     </i>
+    </button>
+    <div class="carousel-item">
+     <img alt="Puma product 1" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/zFKchZacSbojJVnj5jj1LpPx6EoB714JMrMmMyYaqfKCF07JA.jpg" width="500"/>
+    </div>
+    <div class="carousel-item">
+     <img alt="Puma product 2" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/z9JSMrGSr9apF17faWXRX0BuVLAmrpqFf7SKEGialSsDKo3TA.jpg" width="500"/>
+    </div>
+    <div class="carousel-item">
+     <img alt="Puma product 3" class="w-full" height="400" src="https://storage.googleapis.com/a1aa/image/SHyOjoNwo4rMMtNf7pe4Is6z35WJYcIcTWLiuqHXnz9CKo3TA.jpg" width="500"/>
+    </div>
+    <button class="carousel-button next" onclick="nextSlide()">
+     <i class="fas fa-chevron-right">
+     </i>
+    </button>
+   </div>
+   <!-- Filter and Products -->
+   <div class="flex">
+    <!-- Filter Sidebar -->
+    <aside class="w-1/4 pr-4">
+     <button class="bg-white border border-gray-300 text-black px-4 py-2 mb-4 w-full text-left">
+      <i class="fas fa-filter">
+      </i>
+      Filtrar por
+     </button>
+     <div class="bg-white p-4 shadow rounded mb-4">
+      <h2 class="font-bold mb-2">
+       Género
+      </h2>
+      <ul>
+       <li>
+        <a class="text-gray-700 hover:underline" href="#">
+         Hombre
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-700 hover:underline" href="#">
+         Mujer
+        </a>
+       </li>
+       <li>
+        <a class="text-gray-700 hover:underline" href="#">
+         Niños
+        </a>
+       </li>
+      </ul>
+     </div>
+    </aside>
+    <!-- Products Section -->
+    <section class="w-3/4">
+     <div class="flex justify-between items-center mb-4">
+      <span class="text-gray-700">
+       Items 1-12 de
+       <strong>
+        12
+       </strong>
+      </span>
+      <div class="flex items-center">
+       <span class="text-gray-700 mr-2">
+        Ordenar por
+       </span>
+       <select class="border border-gray-300 text-gray-700 px-2 py-1">
+        <option>
+         Posición
+        </option>
+       </select>
+       <i class="fas fa-arrow-up ml-2 text-gray-700">
+       </i>
+      </div>
+     </div>
+     <div class="grid grid-cols-3 gap-4">
+      <!-- Product Card 1 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Camiseta Classics Ribbed Crop Top de Mujer" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/OlaPMuTXBf19SClJzfC3zhwcpbdlxbL1OKhsqDWAa6phvn3TA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Camiseta Classics Ribbed Crop Top de Mujer
+       </p>
+       <p class="text-gray-500">
+        Mujer
+       </p>
+       <p class="text-black font-bold">
+        $129.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Camiseta Classics Ribbed Crop Top de Mujer" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/OlaPMuTXBf19SClJzfC3zhwcpbdlxbL1OKhsqDWAa6phvn3TA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Camiseta Classics Ribbed Crop Top de Mujer
+       </p>
+       <p class="text-gray-500">
+        Mujer
+       </p>
+       <p class="text-black font-bold">
+        $129.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Camiseta Better Classics Tee de Niña" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/99GaRQ04Yy72FJH47lSB5TRFbLe7m9ve4oJ2aGINfj3Gfe8eE.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Camiseta Better Classics Tee de Niña
+       </p>
+       <p class="text-gray-500">
+        Kids
+       </p>
+       <p class="text-black font-bold">
+        $109.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 4 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Zapatos Deportivos Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/PK0bWatZZ9rrLlTT84cQ6dkNeOz9ZnavfZ6fgCtjBSREtPvnA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Zapatos Deportivos
+       </p>
+       <p class="text-gray-500">
+        Hombre
+       </p>
+       <p class="text-black font-bold">
+        $299.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 5 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Pantalones Cortos Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/Rp2Q78b4VLZ5DRolXhxqmVrJ6OfD8cmiWfapaK6HxFJl2n3TA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Pantalones Cortos
+       </p>
+       <p class="text-gray-500">
+        Hombre
+       </p>
+       <p class="text-black font-bold">
+        $89.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 6 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Gorra Deportiva Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/jUNOzE7MFYpIMZteqNojOwT3Reem9ecl586cFozozo8fze59E.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Gorra Deportiva
+       </p>
+       <p class="text-gray-500">
+        Unisex
+       </p>
+       <p class="text-black font-bold">
+        $49.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 7 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Camiseta Deportiva Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/qf7EfChXESrhlk59DxXuf51f3fnhOZz7tZqiA4Aa6Kfjn959E.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Camiseta Deportiva
+       </p>
+       <p class="text-gray-500">
+        Hombre
+       </p>
+       <p class="text-black font-bold">
+        $119.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 8 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Mochila Deportiva Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/iiRVP8tb9aIoFx3leBDidMm3D7GKN1is74Lbs4DZFYKT7z7JA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Mochila Deportiva
+       </p>
+       <p class="text-gray-500">
+        Unisex
+       </p>
+       <p class="text-black font-bold">
+        $159.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 9 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Pantalones Deportivos Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/xgA5FeXAjOVVZiIDTAMmIilgMz99u3v1ssN7Nw4kzCMS7z7JA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Pantalones Deportivos
+       </p>
+       <p class="text-gray-500">
+        Mujer
+       </p>
+       <p class="text-black font-bold">
+        $139.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 10 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Zapatos Deportivos Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/PK0bWatZZ9rrLlTT84cQ6dkNeOz9ZnavfZ6fgCtjBSREtPvnA.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Zapatos Deportivos
+       </p>
+       <p class="text-gray-500">
+        Mujer
+       </p>
+       <p class="text-black font-bold">
+        $299.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 11 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Camiseta Deportiva Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/qf7EfChXESrhlk59DxXuf51f3fnhOZz7tZqiA4Aa6Kfjn959E.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Camiseta Deportiva
+       </p>
+       <p class="text-gray-500">
+        Mujer
+       </p>
+       <p class="text-black font-bold">
+        $119.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+      <!-- Product Card 12 -->
+      <div class="bg-white p-4 shadow rounded">
+       <img alt="Bolso Deportivo Puma" class="w-full mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/eHiOiefusRDb6pBdzTX2sSMj1csutiLHiBE3Jq57JCeAaf8eE.jpg" width="200"/>
+       <h3 class="text-gray-700">
+        Puma
+       </h3>
+       <p class="text-gray-500">
+        Bolso Deportivo
+       </p>
+       <p class="text-gray-500">
+        Unisex
+       </p>
+       <p class="text-black font-bold">
+        $159.950,00
+       </p>
+       <button class="bg-black text-white px-4 py-2 mt-2 rounded hover:bg-gray-800 flex items-center justify-center">
+        <i class="fas fa-shopping-cart">
+        </i>
+       </button>
+      </div>
+     </div>
+    </section>
+   </div>
+  </main>
+  <script src="//code.tidio.co/zpbjwhprqvwgn75czpdvpi9aucynzit5.js" async></script></body>
+<footer>¡Síganos en nuestras redes sociales!</footer>
+<footer>@Sport_quilla7</footer>
+<footer>+57 32176890167</footer>
+<footer>Copyright © 2024 Sports Quilla Inc. Todos los derechos reservados. Política de privacidad | Aviso legal | Mapa del sitio</footer>
+</html>
